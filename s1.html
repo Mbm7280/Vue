@@ -1,0 +1,69 @@
+<html>
+<script>
+    // 视频01 - HelloWrold
+    document.write("Hello-World");
+
+    // 视频02 - 变量定义
+    var str = "Hello";
+
+    // 视频03 - 运算符
+    var a = 10;
+    var b = 20;
+    document.write("a + b = " + (a + b));
+
+    // 视频04 - 判断语句
+    var c = 20;
+    if(c >= 20){
+        document.write("c>=20");
+    }else{
+        document.write("c<=20");
+    }
+
+    switch(c){
+        case 20:
+        document.write("c = 20");
+        break;
+        
+        case 10:
+        document.write("c = 10");
+        break;
+    }
+
+    // 视频05 - 循环语句
+    var d = 0;
+    while(d < 5){
+        document.write("d = " + d);
+        d++;
+    }
+
+    // 视频06 - 函数 // 方法内的局部变量和变量的作用域
+    function print(s){
+        document.write(s + "<br/>");
+    }
+    this.print("aaa");
+
+    // 视频07 -  数组 长度可以直接修改
+    var arr = new Array(3);
+    var arr2 = ['d','e','f'];
+    arr.length = 4;
+    arr.push("a");
+    arr.push("b");
+    arr.push("c");
+    arr.forEach(element => {
+        document.write(element);
+    });
+
+    // 视频08 - 对象
+    var obj = new Object;
+    obj.name = "bbb";
+    obj.age = 19;
+    document.write(obj.name);
+
+
+
+
+
+</script>
+<body>
+</body>
+</html>
